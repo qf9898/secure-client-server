@@ -17,10 +17,10 @@ $ sudo apt-get install libssl-dev
 2. Open a terminal and reach project directory: 
    $ cd project-directory
 
-   Creating a certificate file with OpenSSL lib: (optional, the certificate.pem is already attached in the package) 
+   Create a certificate file with OpenSSL lib: (optional, the certificate.pem is already attached in the package) 
    $ openssl req -x509 -nodes -days 365 -newkey rsa:1024 -keyout certificate.pem -out certificate.pem
 
-3. Compile the ssl-server and ssl-user (Note that a Makefile is given):
+3. Compile the ssl-server and ssl-client (Note that a Makefile is given):
    $ make all
 
 4. Open two terminals A and B, and reach the project directory ($ cd project-directory)
@@ -30,5 +30,5 @@ $ sudo apt-get install libssl-dev
    $ ./ssl-client 127.0.0.1 port#   (e.g., $ ./ssl-client 127.0.0.1 4080)
    At this time, client and server can text with each other via ssl tunnel.
 
-5. At last, to release the project, executable files (i.e., ssl-server and ssl-user) can be removed to save package size:
+5. At last, to release the project, executable files (i.e., ssl-server and ssl-client) can be removed to save package size:
    $ make clean 
