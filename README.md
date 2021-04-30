@@ -23,7 +23,7 @@ $ sudo apt-get install libssl-dev
 3. Compile the ssl-server and ssl-client (Note that a Makefile is given):
    $ make all
 
-4. Open two terminals A and B, and reach the project directory ($ cd project-directory)
+4. Open two terminals A and B, and reach the project directory ($ cd project-directory):
    For termal A (ssl-server):
    $ ./ssl-server port#       (e.g. $ ./ssl-server 4080)
    For Termal B (ssl-client):
