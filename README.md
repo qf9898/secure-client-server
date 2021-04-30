@@ -24,9 +24,9 @@ $ sudo apt-get install libssl-dev
    $ make all
 
 4. Open two terminals A and B, and reach the project directory ($ cd project-directory):
-   For termal A (ssl-server):
+   For terminal A (ssl-server):
    $ ./ssl-server port#       (e.g. $ ./ssl-server 4080)
-   For Termal B (ssl-client):
+   For Terminal B (ssl-client):
    $ ./ssl-client 127.0.0.1 port#   (e.g., $ ./ssl-client 127.0.0.1 4080)
    At this time, client and server can text with each other via ssl tunnel.
 
